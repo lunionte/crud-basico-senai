@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 800px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex: 1 1 200px;
+    transition: border-color 0.2s;
+}
+
+form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+td button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+td button:hover {
+    opacity: 0.9;
+}
+
+td button:nth-child(1) {
+    background-color: #ffc107;
+    color: #333;
+}
+
+td button:nth-child(2) {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Botão de logout */
+#logoutButton {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #6c757d;
+    color: whit;
+}

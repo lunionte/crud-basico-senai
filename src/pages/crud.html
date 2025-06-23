@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CRUD de Usuários</title>
+        <link rel="stylesheet" href="../css/crud.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>CRUD de Usuários</h1>
+
+            <form id="userForm">
+                <input type="text" id="name" placeholder="Nome" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <input type="number" id="hours" placeholder="Carga Horária" required />
+                <button type="submit">Adicionar Usuário</button>
+            </form>
+
+            <h2>Lista de Usuários</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Carga Horária</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="userTableBody">
+                    <!-- Dados aparecem aqui -->
+                </tbody>
+            </table>
+
+            <button id="logoutButton">Sair</button>
+        </div>
+
+        <script src="../js/crud.js"></script>
+    </body>
+</html>
